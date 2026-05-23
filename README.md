@@ -14,12 +14,35 @@ Hosting: GitHub Pages. Dominio: [elhoma.art](https://elhoma.art).
 ├── contacto.html      Formulario de encargo (mailto)
 ├── gracias.html       Confirmación tras enviar
 ├── 404.html           Página no encontrada
+├── aviso-legal.html   Aviso legal (LSSI)
+├── privacidad.html    Política de privacidad (RGPD)
+├── cookies.html       Política de cookies
+├── condiciones.html   Condiciones de encargo (CGC)
 ├── CNAME              Dominio personalizado
 ├── assets/
-│   ├── style.css      Sistema visual
+│   ├── style.css      Sistema visual + estilos páginas legales
 │   └── script.js      Nav sticky + form mailto
 └── README.md
 ```
+
+## Páginas legales — placeholders pendientes
+
+Las 4 páginas legales contienen marcadores `<mark class="ph">` resaltados en amarillo
+en el navegador. **NO son textos definitivos**. Datos a rellenar (find-replace global):
+
+- `[FECHA]` — fecha de publicación
+- `[NOMBRE Y APELLIDOS COMPLETOS]` y `[NOMBRE Y APELLIDOS]`
+- `[NIF/DNI]` / `[NIF]`
+- `[DIRECCIÓN COMPLETA]` / `[CALLE, NÚMERO, CP, MUNICIPIO, PROVINCIA]`
+- `[OPCIONAL — TELÉFONO DE CONTACTO]`
+- `[EPÍGRAFE IAE — habitualmente 861…]`
+- `[CONFIRMAR si la actividad está sujeta y no exenta de IVA…]`
+
+Las páginas tienen `<meta name="robots" content="noindex">` mientras estén
+sin rellenar para evitar que Google las indexe en estado borrador.
+
+Antes de considerarlas definitivas → revisar con asesor legal (especialmente
+condiciones.html, régimen IVA y compatibilidad con pensión).
 
 ## Estado v1 (pendiente)
 
