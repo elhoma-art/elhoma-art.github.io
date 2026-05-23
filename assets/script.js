@@ -1,7 +1,7 @@
-// Sticky nav
-const nav = document.querySelector('.nav');
-if (nav) {
-  const onScroll = () => nav.classList.toggle('is-scrolled', window.scrollY > 20);
+// Sticky header (clase is-scrolled en el <header>)
+const header = document.querySelector('.site-header');
+if (header) {
+  const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 20);
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
 }
@@ -18,7 +18,6 @@ if (navToggle && navLinks) {
   };
   navToggle.addEventListener('click', () => setMenu(!navLinks.classList.contains('is-open')));
   navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
-  // Cerrar con Escape
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && navLinks.classList.contains('is-open')) setMenu(false);
   });

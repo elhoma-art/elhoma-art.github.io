@@ -1,0 +1,13 @@
+{
+  "name": "ELHOMA · Retratos de autor",
+  "short_name": "ELHOMA",
+  "description": "Retratos de autor pintados al óleo en gran formato. Pieza única firmada con libro de proceso.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf8f4",
+  "theme_color": "#1a1a1a",
+  "icons": [
+    { "src": "/assets/favicon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/favicon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

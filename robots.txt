@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /gracias.html
+Disallow: /404.html
+Disallow: /aviso-legal.html
+Disallow: /privacidad.html
+Disallow: /cookies.html
+Disallow: /condiciones.html
+
+Sitemap: https://elhoma.art/sitemap.xml
