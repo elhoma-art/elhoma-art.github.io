@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contacto y encargos · ELHOMA</title>
+<meta name="description" content="Cuéntame quién es la persona a retratar. Respondo en 48 horas con un presupuesto personalizado. Encargos abiertos." />
+<meta name="theme-color" content="#faf8f4" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-brand">ELHOMA</a>
+  <button class="nav-toggle" aria-label="Menú" aria-expanded="false">☰</button>
+  <ul class="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="artista.html">La artista</a></li>
+    <li><a href="encargos.html">Encargos</a></li>
+    <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<section style="padding-top: clamp(140px, 18vw, 200px);">
+  <div class="container" style="max-width: 720px; text-align: center;">
+    <p class="eyebrow">Encargos abiertos</p>
+    <h1 style="font-size: clamp(40px, 6vw, 72px);">Cuéntame.</h1>
+    <p class="lead" style="margin: 32px auto 0; max-width: 56ch;">Quién es la persona a retratar, qué quieres que transmita el retrato, dónde irá colgado. Respondo en 48 horas con un presupuesto personalizado.</p>
+  </div>
+</section>
+
+<section class="tight" style="padding-top: 0;">
+  <div class="container">
+    <form class="form-wrap" data-mailto>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="nombre">Nombre y apellido *</label>
+          <input id="nombre" name="nombre" type="text" required />
+        </div>
+        <div class="field">
+          <label for="email">Email *</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="telefono">Teléfono (opcional)</label>
+          <input id="telefono" name="telefono" type="tel" />
+        </div>
+        <div class="field">
+          <label for="ciudad">Ciudad *</label>
+          <input id="ciudad" name="ciudad" type="text" required />
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Formato deseado *</label>
+        <div class="radio-group">
+          <label><input type="radio" name="formato" value="Impacto · 70×90 cm · desde 3.200 €" required /> Impacto · 70×90 cm · desde 3.200 €</label>
+          <label><input type="radio" name="formato" value="Maestro · 100×120 cm · desde 5.500 €" /> Maestro · 100×120 cm · desde 5.500 €</label>
+          <label><input type="radio" name="formato" value="Aún no sé / quiero más información" /> Aún no sé / quiero más información</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="plazo">Plazo deseado (opcional)</label>
+        <input id="plazo" name="plazo" type="text" placeholder="P.ej. para diciembre, sin prisa, para un cumpleaños…" />
+      </div>
+
+      <div class="field">
+        <label for="mensaje">Cuéntame del encargo *</label>
+        <textarea id="mensaje" name="mensaje" required placeholder="¿Quién es la persona retratada? ¿Qué quieres que transmita el retrato? ¿Dónde irá colgado?"></textarea>
+      </div>
+
+      <div class="field">
+        <label>Fotografías de referencia *</label>
+        <p class="form-help">Tras enviar este formulario se abrirá tu cliente de correo con el mensaje listo. Adjunta de 1 a 5 fotografías de referencia al email antes de enviarlo.</p>
+      </div>
+
+      <div class="field">
+        <label class="checkbox">
+          <input type="checkbox" required />
+          <span>He leído y acepto los términos de encargo y la política de privacidad.</span>
+        </label>
+      </div>
+
+      <div style="margin-top: 40px;">
+        <button type="submit" class="btn btn-solid">Enviar mensaje</button>
+      </div>
+
+      <div class="form-note">
+        Si prefieres, escríbeme directamente a <a href="mailto:hola@elhoma.art" style="text-decoration: underline;">hola@elhoma.art</a> o por mensaje privado en <a href="https://www.instagram.com/elhoma_art/" target="_blank" rel="noopener" style="text-decoration: underline;">@elhoma_art</a>.
+        <br /><br />
+        Tras este primer contacto, los siguientes pasos del proceso (cuestionario, elección de paleta y composición, propuesta) se trabajan de forma personalizada por email.
+      </div>
+
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">ELHOMA</div>
+      <p>Retratos de autor pintados al óleo en gran formato. Barcelona.</p>
+      <p style="margin-top: 16px;"><a href="mailto:hola@elhoma.art">hola@elhoma.art</a></p>
+    </div>
+    <div>
+      <h4>Navegar</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="artista.html">La artista</a></li>
+        <li><a href="encargos.html">Encargos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Síguenos</h4>
+      <ul>
+        <li><a href="https://www.instagram.com/elhoma_art/" target="_blank" rel="noopener">@elhoma_art</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Eloína Honrúbia Martínez</span>
+    <span>Barcelona · Encargos abiertos</span>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
