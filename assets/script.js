@@ -10,16 +10,18 @@ if (nav) {
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
 if (navToggle && navLinks) {
-  navToggle.addEventListener('click', () => {
-    const open = navLinks.classList.toggle('is-open');
+  const setMenu = (open) => {
+    navLinks.classList.toggle('is-open', open);
+    document.body.classList.toggle('nav-open', open);
     navToggle.setAttribute('aria-expanded', open);
     navToggle.textContent = open ? '×' : '☰';
+  };
+  navToggle.addEventListener('click', () => setMenu(!navLinks.classList.contains('is-open')));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+  // Cerrar con Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navLinks.classList.contains('is-open')) setMenu(false);
   });
-  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    navLinks.classList.remove('is-open');
-    navToggle.setAttribute('aria-expanded', 'false');
-    navToggle.textContent = '☰';
-  }));
 }
 
 // Form -> mailto handler
